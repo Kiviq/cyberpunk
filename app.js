@@ -41,7 +41,7 @@
 			this.container.style.background = "#f0e801";
 			this.closeBtn.classList.add('active');
 			this.ad.classList.add('active');
-			this.ctaTextMirrors.forEach( el => el.classList.add('animate'));
+			setTimeout(()=>{this.ctaTextMirrors.forEach( el => el.classList.add('animate'))},100)
 			setTimeout(()=>{
 				this.initHeroGlitches();
 				this.heroInterval = setInterval(()=>{this.initHeroGlitches()},5000);
